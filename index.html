@@ -35,10 +35,8 @@
                 <li class="col-xs-3">Tests</li>
                 <li class="col-xs-3">Full pages</li>
             </ul>
-
         </nav>
     </div>
-
     <div class="container-fluid mains" >
         <div class="row">
              <div class="col-xs-4 custom2" style="border:1px black dashed">
@@ -64,36 +62,25 @@
                  </p>
             </div>
             <div class="mains col-xs-8"  style="width:100%; height: 100%;">
-
             </div>
         </div>
     </div>
-
         <div class="footer custom3" style="text-align: center">
             <p>
                 <p>
-
             This is the foot notes section Most pages will contain extra info that will go here.
                  </p>
             <p>
                 The Tech that goes into the page and which browsers support the features used.
             </p>
-
             </p>
-
         </div>
-
-
     <script>
-
-
         document.body.style.backgroundColor=hsla(2,.8);
-
         custums('custom1',2,1,4,1,"20px");
         custums('custom2',3,1,0,1,"16px");
         custums('custom3',0,1,3,1,"18px");
         function custums(custom,ai,o,ai2,o2,fs){
-
             //customs= the className, ai = array index, o= opacity, ai2=color of tex, o2=text opacity;
             customs= document.getElementsByClassName(custom);
             for (var i=0;i<customs.length;i++){
@@ -101,15 +88,11 @@
                 customs[i].style.color = hsla(ai2,o2);
                 customs[i].style.fontSize=fs;
             }
-
         }
-
         function hsla(ai,o){
             // ai= array index // o = opacity;
             return 'hsla('+colors[ai][0]+","+colors[ai][1]+"%,"+colors[ai][2]+"%,"+o+")";
         }
     </script>
-
-
     </body>
 </html>
