@@ -16,7 +16,7 @@
                 if (xhttp.readyState == 4 && xhttp.status == 200) {
                     vbasics=xhttp.responseText;
                     vbasics=JSON.parse(vbasics);
-                    eval(vbasics.auto_run);
+                    eval(vbasics.auto_run[0]);
                 }
             };
             xhttp.open("GET", "http://geekwisevinson.github.io/home/vbasics.JSON", true);
