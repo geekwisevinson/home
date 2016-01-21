@@ -1,6 +1,7 @@
 {
   "color_schemes":{},
   "auto_run":[
-    "alert('hi')"
+    "alert('hi')",
+    "alert('thanks')"
   ]
 }
