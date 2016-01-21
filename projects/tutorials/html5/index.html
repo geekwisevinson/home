@@ -14,10 +14,12 @@
             }
             xhttp.onreadystatechange = function() {
                 if (xhttp.readyState == 4 && xhttp.status == 200) {
-                    alert(xhttp.responseText);
+                    vbasics=xhttp.responseText;
+                    vbasics=JSON.parse(vbasics);
+                    eval(vbasics.auto_run);
                 }
             };
-            xhttp.open("GET", "http://geekwisevinson.github.io/home/color_schemes.JSON", true);
+            xhttp.open("GET", "http://geekwisevinson.github.io/home/vbasics.JSON", true);
             xhttp.send();
         }
         loadDoc();

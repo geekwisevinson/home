@@ -1,0 +1,6 @@
+{
+  "color_schemes":{},
+  "auto_run":[
+    "alert('hi')"
+  ]
+}
