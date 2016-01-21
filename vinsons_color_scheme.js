@@ -35,5 +35,3 @@ function custom_set(){
     pack_scheme ("custom5",4);
     pack_scheme ("custom6",5);
 }
-
-loaded();
