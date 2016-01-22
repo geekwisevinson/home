@@ -12,8 +12,8 @@ function load_scheme(loc) {
             xhr_response = xhttp.responseText;
             xhr_response=xhr_response.split(' ');
             for (var i=0;i<xhr_response.length;i++){
-                console.log(xhr_response[i])
-                if (xhr_response[i][0]!=0){
+                console.log(xhr_response[i]);
+                if (xhr_response[i][0]!='#'){
                     xhr_response.splice(i,1);
                     i--
                 }
