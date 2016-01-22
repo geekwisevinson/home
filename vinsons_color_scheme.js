@@ -12,33 +12,33 @@ function customs (){
 
         custom=document.getElementsByClassName('custom0');
         for (var i=0;i<custom.length;i++){
-            custom[i].style.backgroundColor=hsl(0);
-            custom[i].style.color=hsl(3);
+            custom[i].style.backgroundColor=cs[0];
+            custom[i].style.color=cs[3];
         }
         custom=document.getElementsByClassName('custom1');
         for (var i=0;i<custom.length;i++){
-            custom[i].style.backgroundColor=hsl(1);
-            custom[i].style.color=hsl(4);
+            custom[i].style.backgroundColor=cs[1];
+            custom[i].style.color=cs[4];
         }
         custom=document.getElementsByClassName('custom2');
         for (var i=0;i<custom.length;i++){
-            custom[i].style.backgroundColor=hsl(2);
-            custom[i].style.color=hsl(5);
+            custom[i].style.backgroundColor=cs[2];
+            custom[i].style.color=cs[5];
         }
         custom=document.getElementsByClassName('custom3');
         for (var i=0;i<custom.length;i++){
-            custom[i].style.backgroundColor=hsl(3);
-            custom[i].style.color=hsl(0);
+            custom[i].style.backgroundColor=cs[3];
+            custom[i].style.color=cs[0];;
         }
         custom=document.getElementsByClassName('custom4');
         for (var i=0;i<custom.length;i++){
-            custom[i].style.backgroundColor=hsl(4);
-            custom[i].style.color=hsl(1);
+            custom[i].style.backgroundColor=cs[4];
+            custom[i].style.color=cs[1];
         }
         custom=document.getElementsByClassName('custom5');
         for (var i=0;i<custom.length;i++){
-            custom[i].style.color=hsl(5);
-            custom[i].style.color=hsl(2);
+            custom[i].style.color=cs[5];
+            custom[i].style.color=cs[2];
         }
 
 
