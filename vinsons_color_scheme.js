@@ -2,7 +2,7 @@ color_schemes={
     "beautiful_girl":[[12,15,23],[12,20,33],[336,75,30],[335,60,46],[29,49,83],[27,26,93]]
 };
 packs=[[0,3],[1,4],[2,5],[3,0],[4,1],[5,2]];
-
+alert('hi');
 function custums(custom,ai,o,ai2,o2,fs){
     //customs= the className, ai = array index, o= opacity, ai2=color of tex, o2=text opacity; fs=fontSize;
     customs= document.getElementsByClassName(custom);
@@ -18,6 +18,7 @@ function hsla(ai,o){
 }
 
 function pack_scheme (custom,pack_index){
+    console.log(pack_index)
     customs= document.getElementsByClassName(custom);
     ai=colors[pack_index[0]];
     ai2=colors[pack_index[1]];
