@@ -28,12 +28,10 @@ function pack_scheme (custom,pack_index){
 }
 
 function custom_set(){
-    pack_scheme ("custom1",0);
-    pack_scheme ("custom2",1);
-    pack_scheme ("custom3",2);
-    pack_scheme ("custom4",3);
-    pack_scheme ("custom5",4);
-    pack_scheme ("custom6",5);
+    pack_scheme ("custom1",packs[0]);
+    pack_scheme ("custom2",packs[1]);
+    pack_scheme ("custom3",packs[2]);
+    pack_scheme ("custom4",packs[3]);
+    pack_scheme ("custom5",packs[4]);
+    pack_scheme ("custom6",packs[5]);
 }
-
-loaded();
