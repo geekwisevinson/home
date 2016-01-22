@@ -10,7 +10,9 @@ function loadDoc(loc) {
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             xhr_response = xhttp.responseText;
-            console.log(xhr_response)
+            console.log(xhr_response);
+            xhr_response=xhr_response.split('#');
+            console.log(xhr_response);
         }
     };
     xhttp.open("GET",loc, true);
