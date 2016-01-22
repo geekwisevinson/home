@@ -17,6 +17,7 @@ function load_scheme(loc) {
                     xhr_response.splice(i,1);
                     i--
                 }
+                xhr_response[i]=xhr_response[i].substring(0,7);
             }
             cs = xhr_response;
             customs();
