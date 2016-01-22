@@ -10,24 +10,9 @@ function load_scheme(loc) {
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             xhr_response = xhttp.responseText;
-            console.log(xhr_response);
-            xhr_response=xhr_response.split('#');
-            console.log(xhr_response.length);
+            xhr_response=xhr_response.split(' ');
             for (var i=0;i<xhr_response.length;i++){
-                console.log(xhr_response[i].length);
-                if (xhr_response[i].length!=7){
-                    if (xhr_response[i].length<7){
-                        xhr_response.splice(i,1);
-                        console.log(xhr_response);
-                        i--;
-                    }else{
-                        xhr_response[i] =xhr_response[i].substring(0,7);
-                        xhr_response[i]="#"+xhr_response[i];
-                    }
-                }else{
-                    xhr_response[i]="#"+xhr_response[i];
-
-                }
+                console.log(xhr_response[i])
             }
             cs = xhr_response;
             customs();
