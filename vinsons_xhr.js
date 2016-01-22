@@ -22,6 +22,7 @@ function load_scheme(loc) {
                         i--;
                     }else{
                         xhr_response[i] =xhr_response[i].substring(0,7);
+                        xhr_response[i]="#"+xhr_response[i];
                     }
                 }else{
                     xhr_response[i]="#"+xhr_response[i];
