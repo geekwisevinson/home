@@ -1,4 +1,4 @@
-function loadDoc(loc) {
+function load_scheme(loc) {
     var xhttp;
     if (window.XMLHttpRequest) {
         // code for modern browsers
@@ -13,6 +13,12 @@ function loadDoc(loc) {
             console.log(xhr_response);
             xhr_response=xhr_response.split('#');
             console.log(xhr_response);
+            for (var i=0;i<xhr_response.length;i++){
+                if (xhr_response[i].length!=6){
+                    xhr_response[i].splice(i,1);
+                    i--;
+                }
+            }
         }
     };
     xhttp.open("GET",loc, true);
@@ -33,6 +39,6 @@ function readTextFile(file)
                 console.log(allText)
             }
         }
-    }
+    };
     rawFile.send(null);
 }
