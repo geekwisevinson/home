@@ -20,7 +20,7 @@ function load_scheme(loc) {
                     console.log(xhr_response);
                     i--;
                 }else{
-                    xhr_response[i]="#"+xhr_response;
+                    xhr_response[i]="#"+xhr_response[i];
                 }
             }
         }
