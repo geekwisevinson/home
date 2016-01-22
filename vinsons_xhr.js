@@ -17,6 +17,7 @@ function load_scheme(loc) {
                 console.log(xhr_response[i].length)
                 if (xhr_response[i].length!=7){
                     xhr_response.splice(i,1);
+                    console.log(xhr_response)
                     i--;
                 }
             }
