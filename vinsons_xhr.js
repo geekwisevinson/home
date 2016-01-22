@@ -14,7 +14,7 @@ function load_scheme(loc) {
             xhr_response=xhr_response.split('#');
             console.log(xhr_response.length);
             for (var i=0;i<xhr_response.length;i++){
-                console.log(xhr_response[i])
+                console.log(xhr_response[i].length)
                 if (xhr_response[i].length!=5){
                     xhr_response.splice(i,1);
                     i--;
