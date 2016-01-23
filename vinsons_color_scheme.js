@@ -57,9 +57,11 @@ function populate_schemes(){
 
 function color_down(){
     if(color_schemer.length==color_schemer.selectedIndex){
-        color_schemer.selectedIndex=0;
+        color_schemer.selectedIndex=1;
+
     }else{
         color_schemer.selectedIndex+=1;
     }
+    load_scheme('../../../vinsons_txt_schemes/'+color_schemer.value+'.txt')
 }
 cs_path=['garden','ariana','jlaw','school'];
