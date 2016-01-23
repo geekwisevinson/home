@@ -5,6 +5,7 @@ auto_run=[
 ];
 
 function mouse_check(event) {
+    event.preventDefault();
     switch (event.which) {
         case 1:
             alert('Left Mouse button pressed.');
