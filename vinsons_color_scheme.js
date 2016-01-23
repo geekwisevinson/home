@@ -54,3 +54,11 @@ function color_down(){
     }
     load_scheme('../../../vinsons_txt_schemes/'+color_schemer.value+'.txt')
 }
+
+function reverse_scheme(){
+    temp_array=[];
+    for (var i=cs.length-1;i>-1;i--){
+        temp_array.push(cs[i]);
+    }
+    cs=temp_array;
+}
