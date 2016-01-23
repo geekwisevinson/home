@@ -75,10 +75,10 @@ function blendColors(c0, c1, p) {
 }
 
 function lightener (index){
-        cs[index] = shadeColor2(cs[index],.5);
+        cs[index] = shadeColor2(cs[index],.1);
         customs();
 }
 function darkener (index){
-    cs[index] = shadeColor2(cs[index],-.5);
+    cs[index] = shadeColor2(cs[index],-.1);
     customs();
 }
