@@ -53,6 +53,9 @@ function populate_schemes(){
         cs_option.innerHTML=cs_path[i];
         color_schemer.appendChild(cs_option)
     }
+    color_schemer.addEventListener('change',function(){
+        load_scheme('../../../vinsons_txt_schemes/'+color_schemer.value+'.txt')
+    })
 
 }
 
