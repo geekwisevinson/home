@@ -14,7 +14,6 @@ function load_scheme(loc) {
             for (var i=0;i<xhr_response.length;i++){
 
                 xhr_response[i]=xhr_response[i].substring(0,7);
-                console.log(xhr_response[i][0]);
                 if (xhr_response[i][0]!='#'){
                     xhr_response.splice(i,1);
                     i--
