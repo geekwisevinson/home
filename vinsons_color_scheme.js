@@ -45,6 +45,7 @@ function customs (){
 }
 
 function populate_schemes(){
+
     color_schemer = document.getElementById('color_schemer');
     for (var i=0;i<cs_path.length;i++){
         cs_option =document.createElement('option');
