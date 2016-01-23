@@ -4,7 +4,7 @@ auto_run=[
     "alert('thanks')"
 ];
 
-function mouser(event) {
+function mouse_check(event) {
     switch (event.which) {
         case 1:
             alert('Left Mouse button pressed.');
