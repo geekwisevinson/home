@@ -16,6 +16,14 @@ function click_handler(e) {
         alert("right")
     }
 
-    alert("Right mouse button " + (isRightMB ? "" : " was not") + "clicked!");
-};
+    if ("which" in e)  // Gecko (Firefox), WebKit (Safari/Chrome) & Opera
+        chr_moz_left= e.which == 2;
+    else if ("button" in e)  // IE, Opera
+        ie_left = e.button == 1;
+
+    if (chr_moz_right==true | ie_right==true){
+        alert("right")
+    }
+
+}
 
