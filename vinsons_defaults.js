@@ -4,32 +4,18 @@ auto_run=[
     "alert('thanks')"
 ];
 
-
-function click_handler(e) {
-    e.preventDefault();
-    e = e || window.event;
-    var left= 0,
-        right=0;
-
-    if ("which" in e)  // Gecko (Firefox), WebKit (Safari/Chrome) & Opera
-        right= e.which == 3;
-    else if ("button" in e)  // IE, Opera
-        right = e.button == 2;
-
-
-    if ("which" in e)  // Gecko (Firefox), WebKit (Safari/Chrome) & Opera
-        left= e.which == 2;
-    else if ("button" in e)  // IE, Opera
-        left = e.button == 1;
-
-    if (right == 1){
-        alert('right');
+function mouser(event) {
+    switch (event.which) {
+        case 1:
+            alert('Left Mouse button pressed.');
+            break;
+        case 2:
+            alert('Middle Mouse button pressed.');
+            break;
+        case 3:
+            alert('Right Mouse button pressed.');
+            break;
+        default:
+            alert('You have a strange Mouse!');
     }
-    if (left == 1){
-        alert('left');
-    }
-    console.log(right);
-    console.log(left);
-
 }
-
