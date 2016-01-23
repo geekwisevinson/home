@@ -28,7 +28,7 @@ function customs (){
         custom=document.getElementsByClassName('custom3');
         for (var i=0;i<custom.length;i++){
             custom[i].style.backgroundColor=cs[3];
-            custom[i].style.color=cs[0];;
+            custom[i].style.color=cs[0];
         }
         custom=document.getElementsByClassName('custom4');
         for (var i=0;i<custom.length;i++){
@@ -43,3 +43,15 @@ function customs (){
 
 
 }
+
+function populate_schemes(){
+    color_schemer = document.getElementById('color_schemer');
+    for (var i=0;color_scheme_array.length;i++){
+        cs_option =document.createElement('option');
+        cs_option.value = cs_path[i];
+        cs_option.innerHTML=cs_path[i];
+    }
+
+}
+
+cs_path=['garden','ariana','jlaw','school'];
