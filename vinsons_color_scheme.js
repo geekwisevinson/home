@@ -61,4 +61,6 @@ function reverse_scheme(){
         temp_array.push(cs[i]);
     }
     cs=temp_array;
+    alert('fix');
+    load_scheme('../../../vinsons_txt_schemes/'+color_schemer.value+'.txt')
 }
