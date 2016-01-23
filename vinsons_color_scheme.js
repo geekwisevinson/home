@@ -51,6 +51,7 @@ function populate_schemes(){
         cs_option =document.createElement('option');
         cs_option.value = cs_path[i];
         cs_option.innerHTML=cs_path[i];
+        color_schemer.appendChild(cs_option)
     }
 
 }
