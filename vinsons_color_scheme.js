@@ -56,7 +56,7 @@ function populate_schemes(){
 }
 
 function color_down(){
-    if(color_schemer.length==color_schemer.selectedIndex){
+    if(color_schemer.length-1==color_schemer.selectedIndex){
         color_schemer.selectedIndex=1;
 
     }else{
