@@ -71,19 +71,22 @@
 <script>
     color_dis=document.getElementsByClassName('color_dis')[0].children;
     for (var i=0;color_dis.length;i++){
+        color_dis[i].index=i;
         color_dis[i].addEventListener('mousedown',function(event){
                 switch (event.which) {
                     case 1:
-                        alert('Left Mouse button pressed.');
+                        console.log('Left Mouse button pressed.');
+                            lightener(this.index);
                         break;
                     case 2:
-                        alert('Middle Mouse button pressed.');
+                        console.log('Middle Mouse button pressed.');
                         break;
                     case 3:
-                        alert('Right Mouse button pressed.');
+                        console.log('Right Mouse button pressed.');
+                            darkener(this.index);
                         break;
                     default:
-                        alert('You have a strange Mouse!');
+                        console('You have a strange Mouse!');
                 }
 
         })
