@@ -74,11 +74,11 @@ function blendColors(c0, c1, p) {
     return "#"+(0x1000000+(Math.round((R2-R1)*p)+R1)*0x10000+(Math.round((G2-G1)*p)+G1)*0x100+(Math.round((B2-B1)*p)+B1)).toString(16).slice(1);
 }
 
-function lighten (index){
+function lightener (index){
         cs[index] = shadeColor2(cs[index],.5);
         customs();
 }
-function darken (index){
+function darkener (index){
     cs[index] = shadeColor2(cs[index],.5);
     customs();
 }
