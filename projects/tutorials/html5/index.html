@@ -60,14 +60,35 @@
 </div>
 
 <div class="color_dis container row" style="height:20px;">
-    <div class="col-xs-2 custom0" onclick="mouse_check(event)" style="height:100%; width:10%">text color</div>
-    <div class="col-xs-2 custom1" onclick="lightener(1)" style="height:100%; width:10%">text color</div>
-    <div class="col-xs-2 custom2" onclick="lightener(1)" style="height:100%; width:10%">text color</div>
-    <div class="col-xs-2 custom3" onclick="lightener(1)" style="height:100%; width:10%">text color</div>
-    <div class="col-xs-2 custom4" onclick="lightener(1)"  style="height:100%; width:10%">text color</div>
-    <div class="col-xs-2 custom5" onclick="lightener(1)" style="height:100%; width:10%">text color</div>
+    <div class="col-xs-2 custom0" style="height:100%; width:10%">text color</div>
+    <div class="col-xs-2 custom1" style="height:100%; width:10%">text color</div>
+    <div class="col-xs-2 custom2" style="height:100%; width:10%">text color</div>
+    <div class="col-xs-2 custom3" style="height:100%; width:10%">text color</div>
+    <div class="col-xs-2 custom4" style="height:100%; width:10%">text color</div>
+    <div class="col-xs-2 custom5" style="height:100%; width:10%">text color</div>
 </div>
 
+<script>
+    color_dis=document.getElementsByClassName('color_dis')[0].children;
+    for (var i=0;color_dis.length;i++){
+        color_dis[i].addEventListener('mousedown',function(event){
+                switch (event.which) {
+                    case 1:
+                        alert('Left Mouse button pressed.');
+                        break;
+                    case 2:
+                        alert('Middle Mouse button pressed.');
+                        break;
+                    case 3:
+                        alert('Right Mouse button pressed.');
+                        break;
+                    default:
+                        alert('You have a strange Mouse!');
+                }
+
+        })
+    }
+</script>
 
 <div class="container-fluid mains" >
     <div class="row">
