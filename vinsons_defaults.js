@@ -28,6 +28,8 @@ function click_handler(e) {
     if (left == 1){
         alert('left');
     }
+    console.log(right);
+    console.log(left);
 
 }
 
