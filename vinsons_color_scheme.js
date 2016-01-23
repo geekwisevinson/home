@@ -8,8 +8,6 @@ function hsl(ai){
 
 function customs (){
 
-
-
         custom=document.getElementsByClassName('custom0');
         for (var i=0;i<custom.length;i++){
             custom[i].style.backgroundColor=cs[0];
@@ -40,8 +38,6 @@ function customs (){
             custom[i].style.color=cs[5];
             custom[i].style.color=cs[2];
         }
-
-
 }
 
 function populate_schemes(){
