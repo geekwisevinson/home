@@ -41,6 +41,7 @@ function load_contents(loc) {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             xhr_response = xhttp.responseText;
             content_dis.innerHTML=xhr_response;
+            customs();
         }
     };
     xhttp.open("GET",loc, true);
