@@ -44,7 +44,7 @@ function populate_schemes(){
         color_schemer.appendChild(cs_option)
     }
     color_schemer.addEventListener('change',function(){
-        load_scheme('../../../vinsons_txt_schemes/'+color_schemer.value+'.txt')
+        load_scheme('/vinsons_txt_schemes/'+color_schemer.value+'.txt')
     })
 }
 function color_down(){
@@ -53,7 +53,7 @@ function color_down(){
     }else{
         color_schemer.selectedIndex+=1;
     }
-    load_scheme('../../../vinsons_txt_schemes/'+color_schemer.value+'.txt')
+    load_scheme('/vinsons_txt_schemes/'+color_schemer.value+'.txt')
 }
 
 function reverse_scheme(){
