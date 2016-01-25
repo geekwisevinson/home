@@ -33,6 +33,7 @@ function customs (){
             custom[i].style.backgroundColor=cs[5];
             custom[i].style.color=cs[2];
         }
+    cs_convert();
 }
 function populate_schemes(){
     color_schemer = document.getElementById('color_schemer');
@@ -81,4 +82,14 @@ function lightener (index){
 function darkener (index){
     cs[index] = shadeColor2(cs[index],-.1);
     customs();
+}
+
+function cs_convert(){
+    color_text=document.getElementById('color_text');
+    color_text.innerHTML=" ";
+    for (var i =0;i<cs.length;i++){
+        color_dis[i].innerHTML = cs[i];
+        color_text.innerHTML += cs[i]+ " "
+    }
+
 }
