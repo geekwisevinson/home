@@ -99,35 +99,15 @@
 </script>
 
 <div class="container-fluid mains" >
-    <div class="row">
-        <div class="col-xs-5 custom1" style="border:1px black dashed">
-            <p>
-                This Page and all the Pages it links to are strictly informational and educational.
-            </p>
-            <p>
-                The plan is to make small pages that teach me one or two specific areas of interest so that I understand more completely my job.
-            </p>
-            <p>
-                At the top a few choice will be made available giving different paths to follow.
-            </p>
-            <p>
-                First, will be a tutorial starting from the beginning in an order that makes sense to me.
-                I will cover what I know til this point (HTML, CSS, SCSS, JavaScript, Mean(Mongo, Express, Angular, Node), React).
-            </p>
-            <p>
-                Second, will be Static example pages. These pages that are fully functional on Github.
-            </p>
-            <p>
-                Third, will be example pages that are external due to Github restrictions.
-                These pages that are not fully functional on Github.
-            </p>
-        </div>
-        <div class="mains col-xs-7"  style="width:100%; height: 100%;">
+    <div id="content_dis" class="row">
 
-        </div>
     </div>
 </div>
 
+<script>
+    content_dis=document.getElementById('content_dis');
+    load_contents('contents.html')
+</script>
 <div class="color_dis container row" style="height:20px;">
     <div class="col-xs-2 custom0" style="height:100%; width:10%">text color</div>
     <div class="col-xs-2 custom1" style="height:100%; width:10%">text color</div>
@@ -148,6 +128,7 @@
     </p>
 </div>
 <script>
+
 load_scheme('../../../vinsons_txt_schemes/school.txt')
 </script>
 

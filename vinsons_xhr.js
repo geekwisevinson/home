@@ -27,6 +27,25 @@ function load_scheme(loc) {
     xhttp.send();
 }
 
+
+function load_contents(loc) {
+    var xhttp;
+    if (window.XMLHttpRequest) {
+        // code for modern browsers
+        xhttp = new XMLHttpRequest();
+    } else {
+        // code for IE6, IE5
+        xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+            xhr_response = xhttp.responseText;
+            content_dis.innerHTML=xhr_response;
+        }
+    };
+    xhttp.open("GET",loc, true);
+    xhttp.send();
+}
 function readTextFile(file)
 {
     var rawFile = new XMLHttpRequest();
