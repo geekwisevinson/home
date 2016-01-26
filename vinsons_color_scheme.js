@@ -1,9 +1,14 @@
-
+initial=0;
 cs_path=['garden','ariana','jlaw','school','shire'];
 function hsl(ai){
     return 'hsl('+cs[ai][0]+","+cs[ai][1]+"%,"+cs[ai][2]+"%)";
 }
 function customs (){
+    if (inital==0){
+        initail =1;
+    }else{
+        cs_name=color_schemer.value;
+    }
         custom=document.getElementsByClassName('custom0');
         for (var i=0;i<custom.length;i++){
             custom[i].style.backgroundColor=cs[0];
