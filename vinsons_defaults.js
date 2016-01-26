@@ -6,6 +6,9 @@ auto_run=[
 
 function bgpic(){
     rn= Math.floor(Math.random()*52);
+    if (rn<10){
+        rn = '0'+rn;
+    }
     document.body.style.backgroundImage="url(/home/img/pic0"+rn+".jpg)";
     document.body.style.backgroundSize= 'cover';
 }
