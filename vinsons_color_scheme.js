@@ -35,7 +35,7 @@ function customs (){
             custom[i].style.color=cs[2];
         }
     cs_convert();
-    color_schemer.selectedIndex = cs_path.indexOf(color_schemer.value);
+    color_schemer.selectedIndex = cs_path.indexOf(cs_name);
 }
 function populate_schemes(){
     color_schemer = document.getElementById('color_schemer');
