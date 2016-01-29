@@ -102,7 +102,7 @@ function darkener (index){
 function cs_convert(){
     color_text = document.getElementsByClassName('color_text');
     color_display = document.getElementsByClassName('color_display');
-  
+
 
     for (var i=0;i<color_text.length;i++){
         color_text[i].innerHTML = '';
