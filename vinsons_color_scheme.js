@@ -4,7 +4,6 @@ function hsl(ai){
     return 'hsl('+cs[ai][0]+","+cs[ai][1]+"%,"+cs[ai][2]+"%)";
 }
 function customs (){
-    color_schemer=document.getElementById('color_schemer');
     if (initial==0){
         initial =1;
     }else{
@@ -130,4 +129,3 @@ function function_color_display(){
         },false);
     }
 }
-
