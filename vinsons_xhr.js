@@ -28,7 +28,7 @@ function load_scheme(loc) {
 }
 
 
-function load_contents(loc,parent_id) {
+function load_contents(loc) {
     var xhttp;
     if (window.XMLHttpRequest) {
         // code for modern browsers
@@ -42,10 +42,10 @@ function load_contents(loc,parent_id) {
             window[loc.substring(0,loc.indexOf('.'))]= xhttp.responseText;
         }
     };
-
-        xhttp.open("GET",'/home/'+loc, true);
+    xhttp.open("GET",'/home/'+loc, true);
     xhttp.send();
 }
+
 function readTextFile(file)
 {
     var rawFile = new XMLHttpRequest();
