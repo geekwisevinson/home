@@ -100,3 +100,30 @@ function cs_convert(){
     }
 
 }
+
+function function_color_display(){
+    color_dis=document.getElementsByClassName('color_dis')[0].children;
+    for (var i=0;i<color_dis.length;i++){
+        color_dis[i].index=i;
+        color_dis[i].addEventListener('contextmenu',function(event){
+            event.preventDefault();return false;},false);
+        color_dis[i].addEventListener('mousedown',function(event){
+            event.preventDefault();
+            switch (event.which) {
+                case 1:
+                    console.log('Left Mouse button pressed.');
+                    lightener(this.index);
+                    break;
+                case 2:
+                    console.log('Middle Mouse button pressed.');
+                    break;
+                case 3:
+                    console.log('Right Mouse button pressed.');
+                    darkener(this.index);
+                    break;
+                default:
+                    console.log('You have a strange Mouse!');
+            }
+        },false);
+    }
+}

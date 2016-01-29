@@ -48,6 +48,10 @@ function load_contents(loc,parent_id) {
                 customs();
             }
 
+            if (parent_id == 'color_dis'){
+                function_color_display();
+            }
+
         }
     };
     if (parent_id.indexOf('content_dis')<-1){
