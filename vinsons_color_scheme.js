@@ -1,5 +1,20 @@
 initial=0;
 cs_path=['garden','ariana','jlaw','school','shire'];
+function populate_schemes(){
+    color_schemer = document.getElementById('color_schemer');
+    for (var i=0;i<cs_path.length;i++){
+        cs_option =document.createElement('option');
+        cs_option.value = cs_path[i];
+        cs_option.innerHTML=cs_path[i];
+        color_schemer.appendChild(cs_option)
+    }
+    color_schemer.addEventListener('change',function(){
+        load_scheme('/home/vinsons_txt_schemes/'+color_schemer.value+'.txt')
+    })
+}
+
+
+
 function hsl(ai){
     return 'hsl('+cs[ai][0]+","+cs[ai][1]+"%,"+cs[ai][2]+"%)";
 }
@@ -43,18 +58,7 @@ function customs (){
     cs_convert();
     color_schemer.selectedIndex = cs_path.indexOf(cs_name);
 }
-function populate_schemes(){
-    color_schemer = document.getElementById('color_schemer');
-    for (var i=0;i<cs_path.length;i++){
-        cs_option =document.createElement('option');
-        cs_option.value = cs_path[i];
-        cs_option.innerHTML=cs_path[i];
-        color_schemer.appendChild(cs_option)
-    }
-    color_schemer.addEventListener('change',function(){
-        load_scheme('/home/vinsons_txt_schemes/'+color_schemer.value+'.txt')
-    })
-}
+
 function color_down(){
     if(color_schemer.length-1==color_schemer.selectedIndex){
         color_schemer.selectedIndex=0;
@@ -101,12 +105,12 @@ function cs_convert(){
             color_text[i].innerHTML += cs[j]+ " ";
         }
     }
-    //for (var i=0;i<color_display.length;i++){
-    //    for (var j =0;j<cs.length;j++){
-    //        color_display[i].innerHTML = cs[j];
-    //
-    //    }
-    //}
+    for (var i=0;i<color_display.length;i++){
+        for (var j =0;j<cs.length;j++){
+            color_display[i].children[j].innerHTML = cs[j];
+
+        }
+    }
 
 
 }
