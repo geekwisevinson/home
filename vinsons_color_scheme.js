@@ -121,7 +121,7 @@ function cs_convert(){
 }
 
 function function_color_display(){
-    color_dis=document.getElementsByClassName('color_dis')[0].children;
+    color_dis=document.getElementsByClassName('color_display')[0].children;
     for (var i=0;i<color_dis.length;i++){
         color_dis[i].index=i;
         color_dis[i].addEventListener('contextmenu',function(event){

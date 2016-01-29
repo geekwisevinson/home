@@ -39,6 +39,7 @@ function all_loaded(){
         }
         if (all_to_load_complete==all_to_load.length){
             console.log('completed' );
+            load_scheme('/home/vinsons_txt_schemes/'+cs_name+'.txt');
             populate_schemes();
             titler();
         }else{
