@@ -129,12 +129,3 @@ function function_color_display(){
         },false);
     }
 }
-
-function depends(){
-    if (color_dis==undefined)
-    return return;
-    if (color_schemer == undefined)
-    return return;
-    if (color_text == undefined)
-    return return;
-}
