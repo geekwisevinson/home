@@ -28,7 +28,7 @@ function load_scheme(loc) {
 }
 
 
-function load_contents(loc) {
+function load_contents(loc,parent_id) {
     var xhttp;
     if (window.XMLHttpRequest) {
         // code for modern browsers
@@ -40,7 +40,8 @@ function load_contents(loc) {
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             xhr_response = xhttp.responseText;
-            content_dis.innerHTML=xhr_response;
+            var parent = document.getElementById(parent_id);
+            parent.innerHTML=xhr_response;
             customs();
         }
     };
