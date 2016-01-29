@@ -48,7 +48,7 @@ function load_contents(loc,parent_id) {
     if (parent_id.indexOf('content_dis')<-1){
         xhttp.open("GET",loc, true);
     }else{
-        xhttp.open("GET",'/'+loc, true);
+        xhttp.open("GET",'/home/'+loc, true);
     }
 
     xhttp.send();
