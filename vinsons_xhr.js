@@ -80,6 +80,8 @@ function all_loaded(){
         }
         if (all_to_load_complete==all_to_load.length){
             console.log('completed');
+        }else{
+            console.log('uncompleted');
         }
     }
 }
