@@ -1,6 +1,7 @@
 initial=0;
 cs_path=['garden','ariana','jlaw','school','shire'];
 function populate_schemes(){
+    console.log('populate_schemes()');
     color_schemer = document.getElementById('color_schemer');
     for (var i=0;i<cs_path.length;i++){
         cs_option =document.createElement('option');
@@ -10,7 +11,8 @@ function populate_schemes(){
     }
     color_schemer.addEventListener('change',function(){
         load_scheme('/home/vinsons_txt_schemes/'+color_schemer.value+'.txt')
-    })
+    });
+    customs();
 }
 
 
