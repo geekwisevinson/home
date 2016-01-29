@@ -42,11 +42,8 @@ function load_contents(loc,parent_id) {
             window[loc.substring(0,loc.indexOf('.'))]= xhttp.responseText;
         }
     };
-    if (parent_id.indexOf('content_dis')<-1){
-        xhttp.open("GET",loc, true);
-    }else{
+
         xhttp.open("GET",'/home/'+loc, true);
-    }
     xhttp.send();
 }
 function readTextFile(file)
