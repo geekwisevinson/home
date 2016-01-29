@@ -37,7 +37,6 @@ function all_loaded(){
             populate_schemes();
 
         }else{
-            console.log('uncompleted'+ ":" + all_to_load[i]);
         }
     }
 }
