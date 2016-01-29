@@ -71,6 +71,7 @@ function load_scheme(loc) {
                 }
             }
             cs = xhr_response;
+            populate_schemes();
             customs();
         }
     };
