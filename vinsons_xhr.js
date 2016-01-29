@@ -17,7 +17,7 @@ function load_contents(loc) {
             for (var i=0;i<where.length;i++){
                 where[i].innerHTML = window[short];
             }
-            console.log(short);
+            //console.log(short);
             all_loaded();
         }
     };
@@ -33,7 +33,7 @@ function all_loaded(){
             all_to_load_complete +=1;
         }
         if (all_to_load_complete==all_to_load.length){
-            console.log('completed' + ":" + all_to_load[i]);
+            console.log('completed' );
             populate_schemes();
 
         }else{

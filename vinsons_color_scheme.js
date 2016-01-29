@@ -19,7 +19,7 @@ function hsl(ai){
     return 'hsl('+cs[ai][0]+","+cs[ai][1]+"%,"+cs[ai][2]+"%)";
 }
 function customs (){
-    console.log('customs')
+    console.log('customs()');
     color_schemer =document.getElementById('color_schemer');
     if (initial==0){
         initial =1;
