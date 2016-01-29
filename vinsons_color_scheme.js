@@ -4,7 +4,6 @@ function hsl(ai){
     return 'hsl('+cs[ai][0]+","+cs[ai][1]+"%,"+cs[ai][2]+"%)";
 }
 function customs (){
-    depends();
     if (initial==0){
         initial =1;
     }else{
@@ -44,7 +43,6 @@ function customs (){
     color_schemer.selectedIndex = cs_path.indexOf(cs_name);
 }
 function populate_schemes(){
-    depends();
     color_schemer = document.getElementById('color_schemer');
     for (var i=0;i<cs_path.length;i++){
         cs_option =document.createElement('option');
@@ -94,7 +92,6 @@ function darkener (index){
 }
 
 function cs_convert(){
-    depends()
     color_text = document.getElementById('color_text');
     if (color_dis==undefined){return false;};
     if (color_text==undefined){return false;}
@@ -107,7 +104,6 @@ function cs_convert(){
 }
 
 function function_color_display(){
-    depends();
     color_dis=document.getElementsByClassName('color_dis')[0].children;
     for (var i=0;i<color_dis.length;i++){
         color_dis[i].index=i;
