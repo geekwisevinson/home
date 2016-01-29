@@ -79,9 +79,9 @@ function all_loaded(){
             all_to_load_complete +=1;
         }
         if (all_to_load_complete==all_to_load.length){
-            console.log('completed');
+            console.log('completed' + ":" + all_to_load[i]);
         }else{
-            console.log('uncompleted');
+            console.log('uncompleted'+ ":" + all_to_load[i]);
         }
     }
 }
