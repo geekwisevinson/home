@@ -92,6 +92,7 @@ function darkener (index){
 }
 
 function cs_convert(){
+    if (color_dis==undefined){return false;}
     for (var i =0;i<cs.length;i++){
         color_dis[i].innerHTML = cs[i];
         color_text.innerHTML += cs[i]+ " "
