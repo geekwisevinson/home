@@ -1,5 +1,6 @@
 function load_contents(loc) {
     console.log('load_contents()');
+    var short=loc.substring(0,loc.indexOf('.'));
     var xhttp;
     if (window.XMLHttpRequest) {
         // code for modern browsers
@@ -11,17 +12,21 @@ function load_contents(loc) {
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
 
-            var short=loc.substring(0,loc.indexOf('.'));
+
             window[short]= xhttp.responseText;
             var where=document.getElementsByClassName(short+"_display");
             for (var i=0;i<where.length;i++){
                 where[i].innerHTML = window[short];
             }
-            //console.log(short);
+            
             all_loaded();
         }
     };
-    xhttp.open("GET",'/home/'+loc, true);
+    if (short=='content'){
+        xhttp.open("GET",'content.html', true);
+    }else{
+        xhttp.open("GET",'/home/'+loc, true);
+    }
     xhttp.send();
 }
 
@@ -35,7 +40,6 @@ function all_loaded(){
         if (all_to_load_complete==all_to_load.length){
             console.log('completed' );
             populate_schemes();
-
         }else{
         }
     }
