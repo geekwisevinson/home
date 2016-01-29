@@ -46,6 +46,7 @@ function load_contents(loc) {
             for (var i=0;i<where.length;i++){
                 where[i].innerHTML = window[short];
             }
+            console.log(short);
         }
     };
     xhttp.open("GET",'/home/'+loc, true);
