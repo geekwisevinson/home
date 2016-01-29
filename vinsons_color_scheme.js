@@ -93,14 +93,20 @@ function darkener (index){
 }
 
 function cs_convert(){
-    color_text = document.getElementById('color_text');
-    if (color_dis==undefined){return false;};
-    if (color_text==undefined){return false;}
-    for (var i =0;i<cs.length;i++){
-        if (color_dis[i]==undefined){return false;}
-        color_dis[i].innerHTML = cs[i];
-        color_text.innerHTML += cs[i]+ " ";
+    color_text = document.getElementsByClassName('color_text');
+    color_display = document.getElementsByClassName('color_display');
+    for (var i=0;i<color_text.length;i++){
+        for (var j =0;j<cs.length;j++){
+            color_text[i].innerHTML += cs[j]+ " ";
+        }
     }
+    //for (var i=0;i<color_display.length;i++){
+    //    for (var j =0;j<cs.length;j++){
+    //        color_display[i].innerHTML = cs[j];
+    //
+    //    }
+    //}
+
 
 }
 
