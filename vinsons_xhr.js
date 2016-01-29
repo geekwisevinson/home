@@ -39,9 +39,13 @@ function load_contents(loc) {
     }
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
-            alert(loc);
-            console.log(loc.substring(0,loc.indexOf('.')));
-            window[loc.substring(0,loc.indexOf('.'))]= xhttp.responseText;
+
+            var short=loc.substring(0,loc.indexOf('.'));
+            window[short]= xhttp.responseText;
+            var where=document.getElementsByClassName(short+"_display");
+            for (var i=0;i<where.length;i++){
+                where[i].innerHTML = window[short];
+            }
         }
     };
     xhttp.open("GET",'/home/'+loc, true);
