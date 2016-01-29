@@ -93,7 +93,8 @@ function darkener (index){
 
 function cs_convert(){
     color_text = document.getElementById('color_text');
-    if (color_dis==undefined){return false;}
+    if (color_dis==undefined){return false;};
+    if (color_text==undefined){return false;}
     for (var i =0;i<cs.length;i++){
         if (color_dis[i]==undefined){return false;}
         color_dis[i].innerHTML = cs[i];
