@@ -47,6 +47,7 @@ function load_contents(loc) {
                 where[i].innerHTML = window[short];
             }
             console.log(short);
+            all_loaded();
         }
     };
     xhttp.open("GET",'/home/'+loc, true);
@@ -69,4 +70,16 @@ function readTextFile(file)
         }
     };
     rawFile.send(null);
+}
+
+function all_loaded(){
+    var all_to_load_complete=0;
+    for (var i=0;i<all_to_load.length;i++){
+        if (window.hasOwnProperty(all_to_load[i])){
+            all_to_load_complete +=1;
+        }
+        if (all_to_load_complete==all_to_load.length){
+            console.log('completed');
+        }
+    }
 }
