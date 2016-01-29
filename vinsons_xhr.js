@@ -39,6 +39,8 @@ function load_contents(loc) {
     }
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
+            alert(loc);
+            console.log(loc.substring(0,loc.indexOf('.')));
             window[loc.substring(0,loc.indexOf('.'))]= xhttp.responseText;
         }
     };
