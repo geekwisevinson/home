@@ -1,4 +1,5 @@
 function load_contents(loc) {
+    console.log('load_contents()');
     var xhttp;
     if (window.XMLHttpRequest) {
         // code for modern browsers
@@ -25,6 +26,7 @@ function load_contents(loc) {
 }
 
 function all_loaded(){
+    console.log('all_loaded()');
     var all_to_load_complete=0;
     for (var i=0;i<all_to_load.length;i++){
         if (window.hasOwnProperty(all_to_load[i])){
@@ -43,7 +45,7 @@ function all_loaded(){
 
 
 function load_scheme(loc) {
-    console.log('load_scheme');
+    console.log('load_scheme()');
     var xhttp;
     if (window.XMLHttpRequest) {
         // code for modern browsers
@@ -57,7 +59,6 @@ function load_scheme(loc) {
             xhr_response = xhttp.responseText;
             xhr_response=xhr_response.split(' ');
             for (var i=0;i<xhr_response.length;i++){
-
                 xhr_response[i]=xhr_response[i].substring(0,7);
                 if (xhr_response[i][0]!='#'){
                     xhr_response.splice(i,1);
