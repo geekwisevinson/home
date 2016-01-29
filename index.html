@@ -3,8 +3,8 @@
 <head>
     <script>
         my_url = window.location.href;
-        my_url = my_url.split('/home');
-
+        my_url = my_url.split('/home/');
+        my_url = my_url[1].split('/');
         console.log(my_url);
     </script>
     <meta charset="utf-8">
