@@ -1,8 +1,12 @@
 initial=0;
 cs_path=['garden','ariana','jlaw','school','shire'];
 function populate_schemes(){
+
     console.log('populate_schemes()');
     color_schemer = document.getElementById('color_schemer');
+    if (color_schemer.innerHTML!=''){
+        return;
+    }
     for (var i=0;i<cs_path.length;i++){
         cs_option =document.createElement('option');
         cs_option.value = cs_path[i];
