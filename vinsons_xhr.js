@@ -43,6 +43,7 @@ function all_loaded(){
 
 
 function load_scheme(loc) {
+    console.log('load_scheme');
     var xhttp;
     if (window.XMLHttpRequest) {
         // code for modern browsers
