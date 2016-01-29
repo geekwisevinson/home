@@ -4,7 +4,7 @@ function hsl(ai){
     return 'hsl('+cs[ai][0]+","+cs[ai][1]+"%,"+cs[ai][2]+"%)";
 }
 function customs (){
-    if (color_schemer)
+    if (colo)
     return;
     if (initial==0){
         initial =1;
@@ -130,4 +130,12 @@ function function_color_display(){
             }
         },false);
     }
+}
+
+function depends(){
+    if (color_scheme_dis.innerHTML=="" || color_dis.innerHTML==''|| nav.innerHTML=='')
+    return false;
+    else
+    return true;
+
 }
