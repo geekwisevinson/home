@@ -95,6 +95,7 @@ function darkener (index){
 function cs_convert(){
     color_text = document.getElementsByClassName('color_text');
     color_display = document.getElementsByClassName('color_display');
+    console.log(color_text);
     for (var i=0;i<color_text.length;i++){
         for (var j =0;j<cs.length;j++){
             color_text[i].innerHTML += cs[j]+ " ";
