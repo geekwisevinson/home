@@ -95,8 +95,9 @@ function cs_convert(){
     color_text = document.getElementById('color_text');
     if (color_dis==undefined){return false;}
     for (var i =0;i<cs.length;i++){
+        if (color_dis[i]==undefined){return false;}
         color_dis[i].innerHTML = cs[i];
-        color_text.innerHTML += cs[i]+ " "
+        color_text.innerHTML += cs[i]+ " ";
     }
 
 }
