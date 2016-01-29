@@ -4,7 +4,7 @@ function populate_schemes(){
 
     console.log('populate_schemes()');
     color_schemer = document.getElementById('color_schemer');
-    if (color_schemer.innerHTML!=''){
+    if (color_schemer.children.length==0){
         return;
     }
     for (var i=0;i<cs_path.length;i++){
