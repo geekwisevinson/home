@@ -39,19 +39,7 @@ function load_contents(loc,parent_id) {
     }
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
-            xhr_response = xhttp.responseText;
-            var parent = document.getElementById(parent_id);
-            parent.innerHTML=xhr_response;
-
-            if(parent_id == 'color_scheme_dis'){
-                populate_schemes();
-                customs();
-            }
-
-            if (parent_id == 'color_dis'){
-                function_color_display();
-            }
-
+            window[loc.substring(0,loc.indexOf('.'))]= xhttp.responseText;
         }
     };
     if (parent_id.indexOf('content_dis')<-1){
@@ -59,7 +47,6 @@ function load_contents(loc,parent_id) {
     }else{
         xhttp.open("GET",'/home/'+loc, true);
     }
-
     xhttp.send();
 }
 function readTextFile(file)
