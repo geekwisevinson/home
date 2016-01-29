@@ -38,19 +38,17 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-<select name="color_schemer" id="color_schemer">
 
-
-</select><button onclick="color_down()"> Cycle Scheme </button>
-<button onclick="reverse_scheme()">Reverse Scheme</button>
+    <div id="color_scheme_dis"></div>
     <div id="nav"></div>
 
 <script>
-    load_contents('nav.html','nav')
+    load_contents('color_scheme_dis.html','color_scheme_dis');
+    load_contents('nav.html','nav');
     populate_schemes();
 </script>
 
-<span id="color_text"></span>
+
 
 
 
