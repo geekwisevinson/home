@@ -42,10 +42,12 @@ function load_contents(loc,parent_id) {
             xhr_response = xhttp.responseText;
             var parent = document.getElementById(parent_id);
             parent.innerHTML=xhr_response;
-            customs();
+
             if(parent_id == 'color_scheme_dis'){
                 populate_schemes();
+                customs();
             }
+
         }
     };
     if (parent_id.indexOf('content_dis')<-1){
