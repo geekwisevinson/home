@@ -4,8 +4,9 @@ function hsl(ai){
     return 'hsl('+cs[ai][0]+","+cs[ai][1]+"%,"+cs[ai][2]+"%)";
 }
 function customs (){
-    if (colo)
-    return;
+    if (depends()){
+        return;
+    }
     if (initial==0){
         initial =1;
     }else{
